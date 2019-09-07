@@ -6,6 +6,7 @@ Below list major classes defined in the project:
 1. simulate process: main function to run the algorithm and simulate visulization in ROS
 2. Map: 2d grid map provie interface to read and write
 3. Agent: the main planning process, a agent has shared pointer to the Map, in this case, all the agents share the same map when initized, when the agent tries to acess the map, the map will lock and unlock to make thread safe.
+![process](images/process.png "fig:")
 ## RESULT AND IMPROVEMETNS
 Here shows the reuslt of the planning process, 
 the prameters of the agent start and goal can be modified in the `InititilzeObjects()`
