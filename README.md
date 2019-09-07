@@ -1,4 +1,4 @@
-# CPPND: Capstone parallel_multi_agent_planning Repo
+# CPPND: Capstone Parallel multi Agent Planning Repo
 ## INTRODUCTION
 The goal of this project is to perfrom multi agent planning on a 2d grid map, while each agent should not step on the path while other agents has already taken except for the goal state. So we simulate n agents parallel planning both with heuristic plannig stratage towards the goal as fast as possible.
 ## METHOD
