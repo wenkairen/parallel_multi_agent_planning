@@ -13,8 +13,15 @@
   * Windows: recommend using [MinGW](http://www.mingw.org/)
 
 ## Basic Build Instructions
-
-1. Clone this repo.
-2. Make a build directory in the top level directory: `mkdir build && cd build`
-3. Compile: `cmake .. && make`
-4. Run it: `./HelloWorld`.
+### the code must run in ROS kineitc version on Ubuntu 16.04
+1. In your catkin_ws workspace: `cd  ~/catkin_ws/src
+2. Clone this repo.
+3  open the folder: ` cd parallel_multi_agent_planning
+4. Make a build directory : `mkdir build && cd build`
+4. Compile: `cmake .. && make -j8`
+5. Then switch to top catkin_workspace: cd ~/catkin_ws
+6. check: `ls
+7. you should be able to see: `build devel src
+8. Then run catkin_make: `catkin_make
+9. source the enviroment: ` source devel/setup.bash
+10.ros launch file to see the planning path in rviz: `oslaunch parallel_multi_agent_planning planning.launch
