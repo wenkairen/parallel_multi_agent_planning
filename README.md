@@ -24,4 +24,4 @@
 7. you should be able to see: `build devel src`
 8. Then run catkin_make: `catkin_make`
 9. source the enviroment: ` source devel/setup.bash`
-10.ros launch file to see the planning path in rviz: `roslaunch parallel_multi_agent_planning planning.launch`
+10. ros launch file to see the planning path in rviz: `roslaunch parallel_multi_agent_planning planning.launch`
