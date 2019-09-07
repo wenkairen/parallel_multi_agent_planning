@@ -1,4 +1,15 @@
 # CPPND: Capstone parallel_multi_agent_planning Repo
+## INTRODUCTION
+The goal of this project is to perfrom multi agent planning on a 2d grid map, while each agent should not step on the path while other agents has already taken except for the goal state. So we simulate n agents parallel planning both with heuristic plannig stratage towards the goal as fast as possible.
+## METHOD
+Below list major classes defined in the project:
+1. simulate process: main function to run the algorithm and simulate visulization in ROS
+2. Map: 2d grid map provie interface to read and write
+3. Agent: the main planning process, a agent has shared pointer to the Map, in this case, all the agents share the same map when initized, when the agent tries to acess the map, the map will lock and unlock to make thread safe.
+## RESULT AND IMPROVEMETNS
+Here shows the reuslt of the planning process, 
+the prameters of the agent start and goal can be modified in the `InititilzeObjects()`
+![final](images/result1.png "fig:")
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
@@ -13,7 +24,7 @@
   * Windows: recommend using [MinGW](http://www.mingw.org/)
 
 ## Basic Build Instructions
-### the code must run in ROS kineitc version on Ubuntu 16.04
+### The code must run in ROS kineitc version on Ubuntu 16.04
 1. In your catkin_ws workspace: `cd  ~/catkin_ws/src`
 2. Clone this repo.
 3  open the folder: `cd parallel_multi_agent_planning`
